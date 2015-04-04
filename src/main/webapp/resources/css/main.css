@@ -1,0 +1,14 @@
+body{
+    background-image: url("/resources/images/Count_von_Count_photo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+.tag-title {
+visible:false;
+}
+
+.tag-cloud{
+height:300px;
+}

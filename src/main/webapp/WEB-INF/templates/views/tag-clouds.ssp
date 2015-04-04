@@ -1,0 +1,7 @@
+<%@ var words: String %>
+<%@ var mentions: String %>
+
+<h2 class="tag-title">Words</h2>
+${render("tag-cloud.ssp",Map("cloudId"-> "words-cloud"))}
+<h2 class="tag-title">Mentions</h2>
+${render("tag-cloud.ssp",Map("cloudId"-> "mentions-cloud"))}

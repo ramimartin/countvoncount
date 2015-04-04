@@ -1,0 +1,5 @@
+<%@ var cloudId: String %>
+
+<div class="row">
+<div id="${cloudId}"class="col-xs-10 col-md-10 tag-cloud"></div>
+</div>
