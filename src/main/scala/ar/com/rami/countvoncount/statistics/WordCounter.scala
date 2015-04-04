@@ -26,7 +26,7 @@ object WordNormalizer {
 object WordFilter {
 
   val exclusions: List[String]= List("de","rt","el","que","a","la","el","y","en","no","un","los","es","con","se","lo",
-    "es","del","para","por","me","al","una","si","las","le","","te","más","q","pero","como","mi")
+    "es","del","para","por","me","al","una","si","las","le","","te","más","q","pero","como","mi","su","esta","les")
 
 
   def apply(words: List[String]): List[String] = {
