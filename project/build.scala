@@ -4,7 +4,7 @@ import org.scalatra.sbt._
 import org.scalatra.sbt.PluginKeys._
 import com.mojolly.scalate.ScalatePlugin._
 import ScalateKeys._
-import com.typesafe.sbt.packager.archetypes.JavaAppPackaging
+import com.typesafe.sbt.SbtStartScript
 
 object CountVonCountBuild extends Build {
   val Organization = "ar.com.rami"
@@ -16,7 +16,7 @@ object CountVonCountBuild extends Build {
   lazy val project = Project (
     "count-von-count",
     file("."),
-    settings = ScalatraPlugin.scalatraWithJRebel ++ scalateSettings ++ Seq(
+    settings = SbtStartScript.startScriptForClassesSettings ++ Defaults.defaultSettings ++ ScalatraPlugin.scalatraWithJRebel ++ scalateSettings ++ Seq(
       organization := Organization,
       name := Name,
       version := Version,
@@ -51,5 +51,5 @@ object CountVonCountBuild extends Build {
         )
       }
     )
-  ).enablePlugins(JavaAppPackaging)
+  )
 }
