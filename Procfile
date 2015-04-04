@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/<app-name> -Dhttp.port=
+web: target/universal/stage/bin/cryptic-journey-4872 -Dhttp.port=8080
