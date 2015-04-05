@@ -36,7 +36,7 @@ object CountVonCountBuild extends Build {
         "com.typesafe" % "config" % "1.2.1",
         "org.scalatra" %% "scalatra-json" % ScalatraVersion,
         "com.github.cb372" %% "scalacache-guava" % "0.6.1",
-        "org.json4s"   %% "json4s-jackson" % "3.2.11"
+        "org.json4s"   %% "json4s-native" % "3.2.11"
       ),
       scalateTemplateConfig in Compile <<= (sourceDirectory in Compile){ base =>
         Seq(
